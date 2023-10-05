@@ -4,4 +4,4 @@ for i in range(2, 11):
     print("\t", end="")
     for j in range(6, 10):
         print(f"{j} x {i} = {j * i}\t", end="")
-    print(
+    print()
