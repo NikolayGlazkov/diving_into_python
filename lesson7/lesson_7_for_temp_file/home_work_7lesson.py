@@ -40,24 +40,24 @@ random_make_file(num+1) # это пришлось сделать чтоб был
 
     # os.rename()
 
-def rename_some_file(new_name,new_ext,ferst_ext,kol,ferst_name_dip):
-    array_of_file = os.listdir()
-    temp_rray = []
-        # print(array_of_file)
-    for file in array_of_file:
-        if file.split(".")[-1] == ferst_ext:
-            temp_rray.append(file)
-    count = 0
-    for file in temp_rray[:kol]:
-        os.rename(file, f"{file.split()[0][:ferst_name_dip]}_{new_name}_{count}.{new_ext}")
-        count += 1
-    print("Скрипт выполнен")
+# def rename_some_file(new_name,new_ext,ferst_ext,kol,ferst_name_dip):
+#     array_of_file = os.listdir()
+#     temp_rray = []
+#         # print(array_of_file)
+#     for file in array_of_file:
+#         if file.split(".")[-1] == ferst_ext:
+#             temp_rray.append(file)
+#     count = 0
+#     for file in temp_rray[:kol]:
+#         os.rename(file, f"{file.split()[0][:ferst_name_dip]}_{new_name}_{count}.{new_ext}")
+#         count += 1
+#     print("Скрипт выполнен")
 
 
-new_name = input("Введите новое имя файлов: ")
-new_ext = input("Введите новое расширение файов: ")
-ferst_ext = input("Введите новое расширение: ")
-kol = int(input("Введите количчество файлов: "))
-ferst_name_dip = int(input("введите сколько букв от старого имени будем использовать в начале"))
+# new_name = input("Введите новое имя файлов: ")
+# new_ext = input("Введите новое расширение файов: ")
+# ferst_ext = input("Введите новое расширение: ")
+# kol = int(input("Введите количчество файлов: "))
+# ferst_name_dip = int(input("введите сколько букв от старого имени будем использовать в начале"))
 
-rename_some_file(new_name,new_ext,ferst_ext,kol,ferst_name_dip)
+# rename_some_file(new_name,new_ext,ferst_ext,kol,ferst_name_dip)
